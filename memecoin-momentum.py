@@ -9,6 +9,7 @@ import requests
 import pandas as pd
 import numpy as np
 import pytz
+import time
 
 from datetime import datetime, timedelta
 
@@ -124,6 +125,8 @@ try:
             
             
             data_list.append(return_datapoint)
+
+            time.sleep(0.25)
             
             end_time = datetime.now()
             elapsed_time = end_time
